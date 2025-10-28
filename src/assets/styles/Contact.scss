@@ -1,0 +1,93 @@
+.contact-page {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  min-height: 100vh;
+  box-sizing: border-box;
+
+  /* DARK MODE */
+  .dark-mode & {
+    background: linear-gradient(135deg, #0d1116, #1f1f1f);
+    color: #fff;
+
+    .contact-container {
+      background-color: #121212;
+
+      h1 { color: #fff; }
+      p { color: #bbb; }
+
+      .input-field {
+        background-color: #1f1f1f;
+
+        .MuiInputBase-input,
+        .MuiOutlinedInput-input,
+        textarea { color: #fff !important; }
+
+        .MuiInputLabel-root { color: #aaa !important; }
+        .MuiFormHelperText-root { color: #ff6b6b !important; }
+        .MuiOutlinedInput-notchedOutline { border-color: #555 !important; }
+      }
+
+      .send-btn {
+        background-color: #5000ca;
+        color: #fff;
+
+        &:hover { background-color: #330099; }
+      }
+    }
+  }
+
+  /* LIGHT MODE */
+  .light-mode & {
+    background: #f8f9fa;
+    color: #0d1116;
+
+    .contact-container {
+      background-color: #fff;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+
+      h1 { color: #0d1116; }
+      p { color: #555; }
+
+      .input-field {
+        background-color: #f0f0f0;
+
+        .MuiInputBase-input,
+        .MuiOutlinedInput-input,
+        textarea { color: #0d1116 !important; }
+
+        .MuiInputLabel-root { color: #555 !important; }
+        .MuiFormHelperText-root { color: #d32f2f !important; }
+        .MuiOutlinedInput-notchedOutline { border-color: #ccc !important; }
+      }
+
+      .send-btn {
+        background-color: #5000ca;
+        color: #fff;
+
+        &:hover { background-color: #330099; }
+      }
+    }
+  }
+
+  /* Responsive */
+  .contact-container {
+    width: 100%;
+    max-width: 700px;
+    padding: 40px;
+    border-radius: 12px;
+    text-align: center;
+
+    @media (max-width: 768px) {
+      padding: 30px 20px;
+    }
+
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+}
