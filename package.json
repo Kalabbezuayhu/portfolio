@@ -63,15 +63,9 @@
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@types/react-vertical-timeline-component": "^3.3.6"
   },
-<<<<<<< HEAD
   "description": "Personal Portfolio of Kaleab Bezuayhu",
-  "keywords": [],
-  "author": "Kaleab Bezuayhu",
-=======
-  "description": "",
   "main": "server.js",
   "keywords": [],
-  "author": "",
->>>>>>> 908fb09d820e48a2e239e69236b950bd9c9c2c51
+  "author": "Kaleab Bezuayhu",
   "license": "ISC"
 }

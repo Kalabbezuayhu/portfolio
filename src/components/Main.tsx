@@ -1,9 +1,5 @@
 import React from "react";
-<<<<<<< HEAD
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-=======
-import GitHubIcon from '@mui/icons-material/GitHub';
->>>>>>> 908fb09d820e48a2e239e69236b950bd9c9c2c51
 import { Telegram } from "@mui/icons-material";
 import '../assets/styles/Main.scss';
 
@@ -22,7 +18,6 @@ function Main() {
         </div>
         <div className="content">
           <div className="social_icons">
-<<<<<<< HEAD
             <a href="https://www.linkedin.com/in/kaleab-bezuayhu-5b5636305" target="_blank" rel="noreferrer"><LinkedInIcon/></a>
             <a href="https://t.me/kaleabbezuayhu/" target="_blank" rel="noreferrer"><Telegram/></a>
           </div>
@@ -31,16 +26,6 @@ function Main() {
 
           <div className="mobile_social_icons">
             <a href="https://www.linkedin.com/in/kaleab-bezuayhu-5b5636305" target="_blank" rel="noreferrer"><LinkedInIcon/></a>
-=======
-            <a href="https://github.com/Kalabbezuayhu" target="_blank" rel="noreferrer"><GitHubIcon/></a>
-            <a href="https://t.me/kaleabbezuayhu/" target="_blank" rel="noreferrer"><Telegram/></a>
-          </div>
-          <h1>Kalab Bezuayhu</h1>
-          <p>Full Stack Engineer</p>
-
-          <div className="mobile_social_icons">
-            <a href="https://github.com/Kalabbezuayhu" target="_blank" rel="noreferrer"><GitHubIcon/></a>
->>>>>>> 908fb09d820e48a2e239e69236b950bd9c9c2c51
             <a href="https://t.me/kaleabbezuayhu/" target="_blank" rel="noreferrer"><Telegram/></a>
           </div>
         </div>

@@ -2,14 +2,10 @@ import React, { useState } from 'react';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import SendIcon from '@mui/icons-material/Send';
-<<<<<<< HEAD
 import EmailIcon from '@mui/icons-material/Email';
 import TextField from '@mui/material/TextField';
 import Alert from '@mui/material/Alert';
 import CircularProgress from '@mui/material/CircularProgress';
-=======
-import TextField from '@mui/material/TextField';
->>>>>>> 908fb09d820e48a2e239e69236b950bd9c9c2c51
 import '../assets/styles/Contact.scss';
 
 const Contact = () => {
@@ -17,22 +13,16 @@ const Contact = () => {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
   const [errors, setErrors] = useState({ name: false, email: false, message: false });
-<<<<<<< HEAD
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [status, setStatus] = useState<{ type: 'success' | 'error'; message: string } | null>(null);
 
   const handleSend = async (e: React.FormEvent | React.MouseEvent) => {
-=======
-
-  const handleSend = async (e: React.MouseEvent<HTMLButtonElement>) => {
->>>>>>> 908fb09d820e48a2e239e69236b950bd9c9c2c51
     e.preventDefault();
 
     const trimmedName = name.trim();
     const trimmedEmail = email.trim();
     const trimmedMessage = message.trim();
 
-<<<<<<< HEAD
     const newErrors = {
       name: trimmedName === '',
       email: trimmedEmail === '',
@@ -106,38 +96,6 @@ const Contact = () => {
       });
     } finally {
       setIsSubmitting(false);
-=======
-    setErrors({
-      name: trimmedName === '',
-      email: trimmedEmail === '',
-      message: trimmedMessage === '',
-    });
-
-    if (!trimmedName || !trimmedEmail || !trimmedMessage) return;
-
-    try {
-      const res = await fetch('https://formspree.io/f/mrbopobb', { // <-- replace with your Formspree URL
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          name: trimmedName,
-          email: trimmedEmail,
-          message: trimmedMessage,
-        }),
-      });
-
-      if (res.ok) {
-        alert('Message sent successfully!');
-        setName('');
-        setEmail('');
-        setMessage('');
-      } else {
-        alert('Failed to send. Try again later.');
-      }
-    } catch (err) {
-      console.error(err);
-      alert('Error sending message.');
->>>>>>> 908fb09d820e48a2e239e69236b950bd9c9c2c51
     }
   };
 
@@ -147,7 +105,6 @@ const Contact = () => {
         <h1>Contact Me</h1>
         <p>Have a project or question? Send me a message below!</p>
 
-<<<<<<< HEAD
         <div className="contact-email-card">
           <a href="mailto:kaleabbezuayhu@gmail.com" className="contact-email-link">
             <EmailIcon className="email-icon" />
@@ -170,72 +127,50 @@ const Contact = () => {
             </Alert>
           )}
 
-=======
-        <Box component="form" className="contact-form" noValidate autoComplete="off">
->>>>>>> 908fb09d820e48a2e239e69236b950bd9c9c2c51
           <TextField
             fullWidth
             label="Your Name"
             value={name}
-<<<<<<< HEAD
             onChange={(e) => {
               setName(e.target.value);
               if (errors.name) setErrors((prev) => ({ ...prev, name: false }));
             }}
-=======
-            onChange={(e) => setName(e.target.value)}
->>>>>>> 908fb09d820e48a2e239e69236b950bd9c9c2c51
             error={errors.name}
             helperText={errors.name ? 'Please enter your name' : ''}
             variant="outlined"
             className="input-field"
-<<<<<<< HEAD
             disabled={isSubmitting}
-=======
->>>>>>> 908fb09d820e48a2e239e69236b950bd9c9c2c51
           />
 
           <TextField
             fullWidth
             label="Email or Phone"
             value={email}
-<<<<<<< HEAD
             onChange={(e) => {
               setEmail(e.target.value);
               if (errors.email) setErrors((prev) => ({ ...prev, email: false }));
             }}
-=======
-            onChange={(e) => setEmail(e.target.value)}
->>>>>>> 908fb09d820e48a2e239e69236b950bd9c9c2c51
             error={errors.email}
             helperText={errors.email ? 'Please enter your email or phone' : ''}
             variant="outlined"
             className="input-field"
-<<<<<<< HEAD
             disabled={isSubmitting}
-=======
->>>>>>> 908fb09d820e48a2e239e69236b950bd9c9c2c51
           />
 
           <TextField
             fullWidth
             label="Message"
             value={message}
-<<<<<<< HEAD
             onChange={(e) => {
               setMessage(e.target.value);
               if (errors.message) setErrors((prev) => ({ ...prev, message: false }));
             }}
-=======
-            onChange={(e) => setMessage(e.target.value)}
->>>>>>> 908fb09d820e48a2e239e69236b950bd9c9c2c51
             error={errors.message}
             helperText={errors.message ? 'Please enter your message' : ''}
             multiline
             rows={6}
             variant="outlined"
             className="input-field"
-<<<<<<< HEAD
             disabled={isSubmitting}
           />
 
@@ -266,18 +201,6 @@ const Contact = () => {
               </a>
             </div>
           )}
-=======
-          />
-
-          <Button
-            variant="contained"
-            endIcon={<SendIcon />}
-            onClick={handleSend}
-            className="send-btn"
-          >
-            Send Message
-          </Button>
->>>>>>> 908fb09d820e48a2e239e69236b950bd9c9c2c51
         </Box>
       </div>
     </div>
