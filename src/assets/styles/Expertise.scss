@@ -11,7 +11,11 @@
   
 .skills-container .skills-grid {
     display: grid;
+<<<<<<< HEAD
     grid-template-columns: repeat(2, 1fr);
+=======
+    grid-template-columns: repeat(3, 1fr);
+>>>>>>> 908fb09d820e48a2e239e69236b950bd9c9c2c51
     grid-gap: 50px;
 }
   
@@ -19,7 +23,10 @@
     align-items: center;
     text-align: left;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 908fb09d820e48a2e239e69236b950bd9c9c2c51
   
 .chip {
     color: rgb(39, 40, 34) !important;
@@ -49,7 +56,10 @@
 
 .flex-chips .MuiChip-root {
     margin-right: 0.5em;
+<<<<<<< HEAD
     margin-bottom: 0.4em;
+=======
+>>>>>>> 908fb09d820e48a2e239e69236b950bd9c9c2c51
 }
 
 .flex-chips .MuiChip-outlined {

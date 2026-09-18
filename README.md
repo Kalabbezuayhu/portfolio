@@ -1,8 +1,16 @@
+<<<<<<< HEAD
 # Kaleab Bezuayhu — Personal Portfolio Website
 
 ![Portfolio Website](mock07.png)
 
 This project is the personal portfolio website of **Kaleab Bezuayhu**, built with **React, Vite, SCSS, and Node.js**. 
+=======
+# Portfolio — Personal Portfolio Website using React, Vite, SCSS, and Node.js
+
+![Portfolio Website](mock07.png)
+
+This project is a personal portfolio website built with **React, Vite, SCSS, and Node.js**. 
+>>>>>>> 908fb09d820e48a2e239e69236b950bd9c9c2c51
 It showcases my web development projects, skills, and experience through a **modern, responsive,
  and interactive interface**.
 

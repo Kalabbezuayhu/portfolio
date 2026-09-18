@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // Timeline Container & Center Line
 #timeline {
     position: relative;
@@ -95,10 +96,44 @@
     letter-spacing: 0.5px;
     padding: 0.8em 0;
     transition: color 0.3s ease;
+=======
+.vertical-timeline span {
+    color: white;
+    font-family: 'Courier Prime', monospace;
+}
+
+.vertical-timeline p {
+    color: rgb(39, 40, 34);
+}
+
+.vertical-timeline-element p {
+    color: rgb(39, 40, 34);
+}
+
+.vertical-timeline-element h3 {
+    color: rgb(39, 40, 34);
+}
+
+.vertical-timeline-element h4 {
+    color: rgb(39, 40, 34);
+}
+
+.vertical-timeline-element span {
+    color: rgb(39, 40, 34);
+}
+
+.vertical-timeline-element .vertical-timeline-element-date {
+    color: white;
+}
+
+.svg-inline--fa {
+    color: white;
+>>>>>>> 908fb09d820e48a2e239e69236b950bd9c9c2c51
 }
 
 @media screen and (max-width: 1170px) {
     .vertical-timeline-element .vertical-timeline-element-date {
+<<<<<<< HEAD
         color: rgba(255, 255, 255, 0.75) !important;
     }
 }
@@ -241,5 +276,8 @@
                 color: #0d1116 !important;
             }
         }
+=======
+        color: rgb(39, 40, 34);
+>>>>>>> 908fb09d820e48a2e239e69236b950bd9c9c2c51
     }
 }
