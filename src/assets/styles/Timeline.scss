@@ -1,0 +1,245 @@
+// Timeline Container & Center Line
+#timeline {
+    position: relative;
+
+    .timeline-heading {
+        text-align: center;
+        font-size: 2.8rem;
+        margin-bottom: 3rem;
+        color: #ffffff;
+        font-family: "Lato", sans-serif;
+        font-weight: 700;
+        transition: color 0.3s ease;
+    }
+
+    .vertical-timeline::before {
+        background: rgba(255, 255, 255, 0.12) !important;
+        width: 3px !important;
+    }
+}
+
+// Timeline Node Icons
+.vertical-timeline-element-icon {
+    background: #0d1116 !important;
+    box-shadow: 0 0 0 3px #5000ca, 0 4px 12px rgba(0, 0, 0, 0.4) !important;
+    transition: transform 0.2s ease, box-shadow 0.2s ease !important;
+
+    svg, .svg-inline--fa {
+        color: #ffffff !important;
+    }
+
+    &:hover {
+        transform: scale(1.1);
+        box-shadow: 0 0 0 3px #5000ca, 0 0 16px rgba(80, 0, 202, 0.5) !important;
+    }
+}
+
+// Timeline Card Content (Matching Projects .project.compact-card)
+.vertical-timeline-element-content {
+    background: #161b22 !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    border-radius: 8px !important;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2) !important;
+    padding: 24px !important;
+    transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease, background-color 0.3s ease !important;
+    box-sizing: border-box;
+
+    &:hover {
+        transform: translateY(-4px) !important;
+        border-color: #5000ca !important;
+        box-shadow: 0 8px 24px rgba(80, 0, 202, 0.25) !important;
+    }
+
+    h3 {
+        color: #ffffff !important;
+        font-family: "Lato", sans-serif;
+        font-size: 1.2rem;
+        font-weight: 700;
+        line-height: 1.35;
+        margin: 0 0 8px 0;
+        transition: color 0.3s ease;
+    }
+
+    h4 {
+        color: #d1b2ff !important;
+        font-family: 'Courier Prime', monospace;
+        font-size: 0.92rem;
+        font-weight: 600;
+        margin: 0 0 10px 0;
+        letter-spacing: 0.3px;
+        transition: color 0.3s ease;
+    }
+
+    p {
+        color: rgba(255, 255, 255, 0.82) !important;
+        font-family: "Lato", sans-serif;
+        font-size: 0.95rem;
+        line-height: 1.6;
+        margin: 0;
+        transition: color 0.3s ease;
+    }
+}
+
+// Timeline Arrow
+.vertical-timeline-element-content-arrow {
+    border-right: 7px solid #161b22 !important;
+    transition: border-right-color 0.3s ease;
+}
+
+// Timeline Dates
+.vertical-timeline-element .vertical-timeline-element-date {
+    color: rgba(255, 255, 255, 0.75) !important;
+    font-family: 'Courier Prime', monospace;
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    padding: 0.8em 0;
+    transition: color 0.3s ease;
+}
+
+@media screen and (max-width: 1170px) {
+    .vertical-timeline-element .vertical-timeline-element-date {
+        color: rgba(255, 255, 255, 0.75) !important;
+    }
+}
+
+// Skills Tiers inside Timeline Card
+.timeline-skills-tiers {
+    margin-top: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    .timeline-tier {
+        text-align: left;
+
+        .tier-tag {
+            display: inline-block;
+            font-family: 'Courier Prime', monospace;
+            font-size: 0.72rem;
+            font-weight: 700;
+            padding: 2px 8px;
+            border-radius: 4px;
+            margin-bottom: 6px;
+            letter-spacing: 0.5px;
+        }
+
+        .tier-items {
+            margin: 0;
+            line-height: 1.5;
+            font-family: "Lato", sans-serif;
+        }
+
+        &.core {
+            .tier-tag {
+                background: rgba(80, 0, 202, 0.25);
+                color: #d1b2ff;
+                border: 1px solid rgba(80, 0, 202, 0.5);
+            }
+            .tier-items {
+                font-weight: 600;
+                font-size: 0.95rem;
+                color: #ffffff !important;
+            }
+        }
+
+        &.familiar {
+            .tier-tag {
+                background: rgba(255, 255, 255, 0.06);
+                color: rgba(255, 255, 255, 0.75);
+                border: 1px solid rgba(255, 255, 255, 0.12);
+            }
+            .tier-items {
+                font-size: 0.88rem;
+                color: rgba(255, 255, 255, 0.82) !important;
+                font-weight: 400;
+            }
+        }
+    }
+}
+
+// Light Mode Overrides
+.light-mode #timeline,
+#timeline.light-mode {
+    .timeline-heading, h1 {
+        color: #0d1116 !important;
+    }
+
+    .vertical-timeline::before {
+        background: rgba(0, 0, 0, 0.12) !important;
+    }
+
+    .vertical-timeline-element-icon {
+        background: #ffffff !important;
+        box-shadow: 0 0 0 3px #5000ca, 0 4px 12px rgba(0, 0, 0, 0.1) !important;
+
+        svg, .svg-inline--fa {
+            color: #5000ca !important;
+        }
+    }
+
+    .vertical-timeline-element-content {
+        background: #ffffff !important;
+        border: 1px solid rgba(0, 0, 0, 0.1) !important;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06) !important;
+
+        &:hover {
+            border-color: #5000ca !important;
+            box-shadow: 0 8px 24px rgba(80, 0, 202, 0.15) !important;
+        }
+
+        h3 {
+            color: #0d1116 !important;
+        }
+
+        h4 {
+            color: #5000ca !important;
+        }
+
+        p {
+            color: #0d1116 !important;
+        }
+
+        span {
+            color: #0d1116 !important;
+        }
+    }
+
+    .vertical-timeline-element-content-arrow {
+        border-right: 7px solid #ffffff !important;
+    }
+
+    .vertical-timeline-element .vertical-timeline-element-date {
+        color: #0d1116 !important;
+    }
+
+    @media screen and (max-width: 1170px) {
+        .vertical-timeline-element .vertical-timeline-element-date {
+            color: #0d1116 !important;
+        }
+    }
+
+    .timeline-skills-tiers {
+        .timeline-tier.core {
+            .tier-tag {
+                background: rgba(80, 0, 202, 0.08);
+                color: #5000ca !important;
+                border: 1px solid rgba(80, 0, 202, 0.25);
+            }
+            .tier-items {
+                color: #0d1116 !important;
+            }
+        }
+
+        .timeline-tier.familiar {
+            .tier-tag {
+                background: rgba(0, 0, 0, 0.05);
+                color: #0d1116 !important;
+                border: 1px solid rgba(0, 0, 0, 0.15);
+            }
+            .tier-items {
+                color: #0d1116 !important;
+            }
+        }
+    }
+}
